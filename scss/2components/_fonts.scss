@@ -1,0 +1,16 @@
+@for $i from 10px through 32px {
+    .font-#{$i}{
+        font-size: $i;
+    }
+}
+
+.boldText{
+    font-weight: 600;
+}
+
+.text-left{
+    text-align: left;
+}
+.w-80{
+    width: 80%;
+}

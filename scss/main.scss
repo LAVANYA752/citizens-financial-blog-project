@@ -1,0 +1,14 @@
+@import "./../node_modules/aos/dist/aos.css";
+@import "./0abstract/0abstract";
+@import "./1base/0base";
+@import "./2components/0components";
+@import "./3layout/0layouts";
+@import "./5vendors/bootstrap";
+@import "./6utils/0utils";
+
+// pages
+@import "./4pages/responsive";
+@import "./4pages/homeSection";
+@import "./4pages/workSection";
+@import "./4pages/featureSection";
+@import "./4pages/contactSection";

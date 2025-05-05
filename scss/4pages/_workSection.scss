@@ -1,0 +1,56 @@
+.workSection{
+    background-image: linear-gradient(to bottom, #e7e9f0, #edeef4, #f4f4f7, #f9f9fb, #ffffff);
+    padding-top: 100px;
+    .leftSideBlock{
+        padding-right: 30px;
+        .topImageBlock{
+            position: relative;
+            .bannerImage{
+                width: 80%;
+                border-radius: 20px;
+            }
+            .workImage{
+                position: absolute;
+                width: 250px;
+                bottom: -38px;
+                transform: translateX(-50%);
+            }
+        }
+        .descriptionText{
+            font-size: 18px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .iconBlock{
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            position: relative;
+            background-color: var(--primaryColor);
+            svg{
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                fill: #000000;
+            }
+        }
+    }
+    .rightSideBlock{
+        padding-left: 30px;
+        .headingText{
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        .descriptionText{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .bottomImageBlock{
+            .bannerImage{
+                width: 90%;
+                border-radius: 15px;
+            }
+        }
+    }
+   
+}

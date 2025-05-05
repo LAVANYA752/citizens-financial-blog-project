@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@types/aos": "^3.0.7",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "sass": "^1.79.3"
+  }
+}

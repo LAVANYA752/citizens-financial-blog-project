@@ -1,0 +1,28 @@
+
+// @for $i from 10px through 32px {
+//     .icon-#{$i}{
+//        width: #{$i};
+//        height: $i;
+//     }
+// }
+$size : 11px,20px,16px,25px,24px,14px;
+@each $size in $size {
+    .icon-#{$size}{
+         width: #{$size};
+         height: $size;
+    }
+}
+
+
+svg{
+    &.iconsBlock{
+        cursor: pointer;
+        fill: var(--defaultSvgColor);
+    }
+    &.icon-light{
+        fill: var(--textColorLight);
+    }
+    &.icon-dark{
+        fill: var(--textColorDark);
+    }
+}

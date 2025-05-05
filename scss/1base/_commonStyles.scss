@@ -1,0 +1,30 @@
+html, body, div, span, footer, header,figure,h1,h2{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    box-sizing: border-box;
+    line-height: 1.0;
+    min-height: 100vh;
+    min-width: 320px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    font-family: 'Alice';
+}
+
+
+p{
+    margin: 0;
+}

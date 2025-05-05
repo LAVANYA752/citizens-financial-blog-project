@@ -1,0 +1,139 @@
+.contactSection{
+    background: #e9e9e9;
+    margin-top: 160px;
+    .contactImg{
+        position: absolute;
+        top: -58px;
+        left: 0px;
+        object-fit: cover;
+        width: 120px;
+    }
+    .primaryBlock{ 
+        transform: translateX(100px);
+        padding: 40px;
+       .innerSpan{
+          color: #000000;
+          opacity: .8;
+          margin-bottom: 15px;
+
+        }
+        .socialIcons{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #c5c5c5;
+            background: #fff;
+            margin-right: 15px;
+            transition: all .5s;
+            svg{
+                fill: var(--secondaryColor);
+            }
+           
+            &:hover{
+                background-color: var(--secondaryColor);
+                transition: all 1s;
+                transform: scale(1.2);
+                svg{
+                    fill: #fff;
+                    transition: all 1s;
+                }
+            }
+        
+        }
+        .contactBlock{
+            padding: 10px 0px;
+            border-bottom: 1px solid #cccc;
+            svg{
+               fill: var(--secondaryColor);
+            }
+            .linkText{
+                color: var(--secondaryColor);
+               font-size: 18px;
+               
+               text-decoration: unset;
+            }
+            &.hover{
+                opacity: .7;
+            }
+        }
+        .requestBlock{
+            padding: 20px 0px;
+        }
+        .textBlock{
+            color: var(--secondaryColor);
+            .titleText{
+
+            }
+            .descriptionText{
+
+            }
+        }
+    }
+
+    .positionBlock{
+        transform: translateY(-20%);
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    
+        .contactForm{
+            background: #000000;
+            box-shadow:0 0 0 1px rgba(0,0,0,.05);
+            border-radius: 15px;
+            padding: 45px;
+            color: #fff;
+            width: fit-content;
+            min-width: 370px;
+            position: relative;
+            & > div:not(:last-child){
+                margin-bottom: 15px;
+            }
+            .labelIcon{
+                fill: #fff;
+            }
+            .labelText{
+                margin: 0;
+                position: relative;
+                font-size: 18px;
+                &::before{
+                    position: absolute;
+                    content: "*";
+                    color: #bfbfbf;
+                    top: -1px;
+                    right: -12px;
+                }
+            }
+            .inputBlock{
+                input,textarea{
+                    height: 40px;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    padding: 0px 10px;
+                    &:focus{
+                        outline: unset;
+                        box-shadow: unset;
+                    }
+                    &::placeholder{
+                        color: #ccc;
+                        font-size: 14px;
+                    }
+                }
+                textarea{
+                    height: unset !important;
+                }
+
+            }
+        }
+        .startImg{
+            position: absolute;
+            top: 10px;
+            transform: translate(-50%, -50%);
+            left: 3px;
+        }
+    }
+
+}

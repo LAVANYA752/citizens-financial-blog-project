@@ -1,0 +1,94 @@
+
+button{
+    &.btn{
+        align-items: center;
+      //   border-radius: var(--borderPrimaryRadius);
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 14px;
+        font-weight: 700;
+        height: 43px;
+        justify-content: center;
+        line-height: 36px;
+        min-width: 91px;
+        outline: 0;
+        padding: 0 35px;
+        white-space: nowrap;
+        width: fit-content;
+        &.primaryBtn{
+             background-color: #fff;
+             color: var(--primarybtnTextColor);
+             border: 1px solid transparent;
+             svg{
+                fill: var(--primarybtnTextColor);
+             }
+             &:hover{
+                background-color: var(--primarybtnTextColor);
+                color: #fff;
+                border: 1px solid #fff;
+                transition: all .2s;
+                svg{
+                    fill: #fff;
+                }
+             }
+        }
+        &.primaryBtnFill{
+             background-color: var(--primarybtnTextColor);
+             color: #fff;
+             border: 1px solid transparent;
+             svg{
+                fill: #fff;
+             }
+             &:hover{
+                background-color: #fff;
+                color: var(--primarybtnTextColor);
+                transition: all .2s;
+                border: 1px solid var(--primarybtnTextColor);
+                svg{
+                   fill: var(--primarybtnTextColor);
+                }
+             }
+        }
+        &.secondaryBtn{
+             background-color: var(--secondaryColor);
+             color: #fff;
+             border: 1px solid transparent;
+             svg{
+                fill: #fff;
+             }
+             &:hover{
+                border: 1px solid var(--secondaryColor);
+                color: var(--secondaryColor);
+                background: #fff;
+                svg{
+                    fill: var(--secondaryColor);
+                }
+             }
+        }
+        &.secondaryBtnOutline{
+             border: 1px solid var(--secondaryColor);
+             color: var(--secondaryColor);
+             background: transparent;
+             svg{
+                fill: var(--secondaryColor);
+             }
+             &:hover{
+                background-color: var(--secondaryColor);
+                color: #fff;
+            
+                svg{
+                    fill: #fff;
+                }
+             }
+        }
+
+        &.hoverEffect{
+            opacity: 0.7;
+            transition: all .5s linear;
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+    }
+}

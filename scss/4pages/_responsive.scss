@@ -1,0 +1,42 @@
+@include media-breakpoint-down(sm) { 
+    .container{
+        margin: 0px 10px;
+    }
+    .carouselCardItemsBlock{
+        max-width: 100vw;
+        & > div:not(:first-child){
+            display: none !important;
+        }
+    }
+ }
+@include media-breakpoint-down(md) {
+
+  
+ } 
+@include media-breakpoint-down(lg) { 
+
+    .homeSectionMain{
+        &Block{
+            .primaryBlock {
+                justify-content: center;
+                text-align: center;
+            }
+            .secondaryBlock{
+                display: none;
+            }
+            .headingText{
+                max-width: 100%;
+            }
+        }
+    }
+    .workSection{
+        min-height: unset;
+    }
+
+ }
+@include media-breakpoint-down(xl) { 
+
+ }
+@include media-breakpoint-down(xxl) { 
+
+}
